@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.soundRecorder.SoundRecordingFragment">
+
+    <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+        android:id="@+id/progress_bar"
+        style="@style/Widget.MaterialProgressBar.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:indeterminate="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/remmy_contacts_dialog_resolution"
+        app:mpb_progressStyle="horizontal"
+        app:mpb_useIntrinsicPadding="false" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        tools:ignore="MissingConstraints"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorDarkBlue"
+            android:text="@string/start_recording"
+            android:textColor="@color/colorWhite" />
+
+        <Button
+            android:id="@+id/button_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorDarkBlue"
+            android:text="@string/stop_recording"
+            android:textColor="@color/colorWhite" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorDarkBlue"
+            android:text="@string/play_sound"
+            android:textColor="@color/colorWhite"/>
+
+        <Button
+            android:id="@+id/button_pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorDarkBlue"
+            android:text="@string/stop_sound"
+            android:textColor="@color/colorWhite"/>
+    </LinearLayout>
+</LinearLayout>
